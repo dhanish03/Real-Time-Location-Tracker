@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Location Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="/js/script.js"></script>
+</head>
+<body>
+    <h1 class="gradient-header">Real Time Location Tracker</h1>
+
+    <style>
+      .gradient-header {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #667eea, #764ba2, #ff6a00);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+    
+    <div id="userCount">Active Users: 0</div>
+    <div id="map" style="height: 500px;"></div>
+</body>
+</html>
